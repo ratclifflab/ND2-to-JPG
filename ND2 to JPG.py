@@ -51,8 +51,8 @@ def process(srcDir, dstDir, nameContains, currentDir, fileName, keepDirectories,
         os.makedirs(saveDir)
     print "Saving to", saveDir
     fs.saveAsJpeg(os.path.join(saveDir, fileName))
-    IJ.selectWindow("Log")
-    IJ.run("Close")
+    #IJ.selectWindow("Log")
+    #IJ.run("Close")
     imp.close()
 
 run()
