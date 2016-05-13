@@ -44,7 +44,6 @@ def process(srcDir, dstDir, nameContains, currentDir, fileName, keepDirectories,
     saveDir = currentDir.replace(srcDir, dstDir) if keepDirectories else dstDir
     head, tail = os.path.splitext(fileName)
     imps = BF.openImagePlus(os.path.join(currentDir, fileName))
-    print "Opened", fileName
     for imp in imps:
         if not anneBoleyn:
             print "Now showing image..."
