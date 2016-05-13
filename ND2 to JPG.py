@@ -12,7 +12,7 @@ import os
 
 def run():
     gd = GenericDialogPlus("ND2 Conversion Tool")
-    gd.addMessage("This plugin uses BioFormats to convert ND2 images to various file formats for further processing in ImageJ.")
+    gd.addMessage("This plugin uses BioFormats to convert ND2 images to JPEG for further processing in ImageJ.")
     gd.addDirectoryOrFileField("Input: ", "G:\\Subdir testing\\") #srcDir
     gd.addDirectoryOrFileField("Output: ", "G:\\Subdir testing\\") #dstDir
     gd.addStringField("File name contains: ", "") #nameContains
